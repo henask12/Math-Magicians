@@ -1,6 +1,6 @@
 .calculator {
   max-width: 300px;
-  margin: 250px auto;
+  margin: auto;
   padding: 0.5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -46,7 +46,7 @@
   text-align: center;
   border: none;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #fff;
   cursor: pointer;
 }
 
@@ -55,5 +55,19 @@
 }
 
 .orange {
-    background-color: orange;
+  background-color: orange;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #01929c;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.container {
+  margin: 250px auto;
 }
