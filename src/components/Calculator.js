@@ -1,35 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Calculator.css';
 import CalculatorTitle from './CalculatorTitle';
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const [displayValue, setDisplayValue] = useState('0');
+  const [calculatorData, setCalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleClick = (buttonName) => {
+    const newData = calculate(calculatorData, buttonName);
+    setCalculatorData(newData);
+
+    if (newData.total) {
+      setDisplayValue(newData.total);
+    } else if (newData.next) {
+      setDisplayValue(newData.next);
+    } else {
+      setDisplayValue('0');
+    }
+  };
   return (
     <div className="container">
       <CalculatorTitle />
 
       <div className="calculator">
-        <div className="display"><span>0</span></div>
+        <div className="display"><span>{displayValue}</span></div>
         <div className="buttons">
-          <button className="button row" type="button">AC</button>
-          <button className="button row" type="button">+/-</button>
-          <button className="button row" type="button">%</button>
-          <button className="button row orange" type="button">/</button>
-          <button className="button row" type="button">7</button>
-          <button className="button row" type="button">8</button>
-          <button className="button row" type="button">9</button>
+          <button className="button row" type="button" onClick={() => handleClick('AC')}>AC</button>
+          <button className="button row" type="button" onClick={() => handleClick('+/-')}>+/-</button>
+          <button className="button row" type="button" onClick={() => handleClick('%')}>%</button>
+          <button className="button row orange" type="button" onClick={() => handleClick('÷')}>÷</button>
+          <button className="button row" type="button" onClick={() => handleClick('7')}>7</button>
+          <button className="button row" type="button" onClick={() => handleClick('8')}>8</button>
+          <button className="button row" type="button" onClick={() => handleClick('9')}>9</button>
 
-          <button className="button row orange" type="button">*</button>
-          <button className="button row" type="button">4</button>
-          <button className="button row" type="button">5</button>
-          <button className="button row" type="button">6</button>
-          <button className="button row orange" type="button">-</button>
-          <button className="button row" type="button">1</button>
-          <button className="button row" type="button">2</button>
-          <button className="button row" type="button">3</button>
-          <button className="button row orange" type="button">+</button>
-          <button className="button row two" type="button">0</button>
-          <button className="button row" type="button">.</button>
-          <button className="button row orange" type="button">=</button>
+          <button className="button row orange" type="button" onClick={() => handleClick('x')}>x</button>
+          <button className="button row" type="button" onClick={() => handleClick('4')}>4</button>
+          <button className="button row" type="button" onClick={() => handleClick('5')}>5</button>
+          <button className="button row" type="button" onClick={() => handleClick('6')}>6</button>
+          <button className="button row orange" type="button" onClick={() => handleClick('-')}>-</button>
+          <button className="button row" type="button" onClick={() => handleClick('1')}>1</button>
+          <button className="button row" type="button" onClick={() => handleClick('2')}>2</button>
+          <button className="button row" type="button" onClick={() => handleClick('3')}>3</button>
+          <button className="button row orange" type="button" onClick={() => handleClick('+')}>+</button>
+          <button className="button row two" type="button" onClick={() => handleClick('0')}>0</button>
+          <button className="button row" type="button" onClick={() => handleClick('.')}>.</button>
+          <button className="button row orange" type="button" onClick={() => handleClick('=')}>=</button>
         </div>
 
       </div>
