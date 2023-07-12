@@ -32,7 +32,15 @@
         ],
         "react/react-in-jsx-scope": "off",
         "import/no-unresolved": "off",
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": false,
+                "optionalDependencies": false,
+                "peerDependencies": false
+            }
+        ]
     },
     "overrides": [
         {
@@ -54,5 +62,10 @@
     "ignorePatterns": [
         "dist/",
         "build/"
-    ]
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {}
+        }
+    }
 }
