@@ -104,14 +104,6 @@ In order to run this project you need:
 <ul>
     <li><p>A Browser</p></li>
 </ul>
-<!--
-Example command:
-
-<!-- ```sh
- gem install rails
-``` -->
-
--->
 
 ### Setup
 
