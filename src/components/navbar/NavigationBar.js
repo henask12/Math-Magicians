@@ -12,10 +12,10 @@ function NavigationBar() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/about">Calculator</a>
+          <a href="/calculator">Calculator</a>
         </li>
         <li>
-          <a href="/services">Qoute</a>
+          <a href="/qoute">Qoute</a>
         </li>
       </ul>
     </nav>
