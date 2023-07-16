@@ -122,15 +122,6 @@ Clone this repository to your desired folder:
   git clone https://github.com/henask12/Math-Magicians.git
 ```
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
 ### Install
 
 Install this project with:
