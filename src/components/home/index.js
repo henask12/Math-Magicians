@@ -2,12 +2,6 @@ import React from 'react';
 
 export default function Homepage() {
   return (
-  // <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-  //     <div className="bg-white shadow-lg rounded-lg p-6">
-  //         <h1 className="text-4xl font-bold mb-4">Welcome to My Homepage</h1>
-  //         <p className="text-lg">This is a basic React homepage with Tailwind CSS.</p>
-  //     </div>
-  // </div>
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
       <header className="bg-gray-700 py-16">
