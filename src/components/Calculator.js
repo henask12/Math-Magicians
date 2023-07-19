@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Calculator.css';
 import CalculatorTitle from './CalculatorTitle';
 import calculate from '../logic/calculate';
-import Quote from './Quote';
 import MathTitle from './HeaderMath';
 
 function Calculator() {
@@ -30,10 +29,12 @@ function Calculator() {
       <MathTitle />
       <div className="container-main">
         <div className="qoute-cont">
-          <Quote />
+          <CalculatorTitle />
+          <p className="bg-grey p-6 rounded-lg ml-5 shadow-md cursor-pointer">
+            This is just Simple Calculator app created with ReactJs
+          </p>
         </div>
         <div className="container-calc">
-          <CalculatorTitle />
           <div className="calculator">
             <div className="display"><span>{displayValue}</span></div>
             <div className="buttons">
