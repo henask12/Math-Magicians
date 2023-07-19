@@ -29,7 +29,7 @@ export default function Homepage() {
               className="bg-white p-6 rounded-lg shadow-md cursor-pointer"
             >
               <h3 className="text-xl font-bold mb-2">Feature 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Simple Home page is developed</p>
             </div>
 
             {/* Feature 2 */}
@@ -37,7 +37,7 @@ export default function Homepage() {
               className="bg-white p-6 rounded-lg shadow-md cursor-pointer"
             >
               <h3 className="text-xl font-bold mb-2">Feature 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Calculator is integrated on the Website</p>
             </div>
 
             {/* Feature 3 */}
@@ -45,7 +45,7 @@ export default function Homepage() {
               className="bg-white p-6 rounded-lg shadow-md cursor-pointer"
             >
               <h3 className="text-xl font-bold mb-2">Feature 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Qoute is generated and displayed on the Website</p>
             </div>
           </div>
         </div>
